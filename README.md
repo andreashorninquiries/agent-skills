@@ -47,11 +47,24 @@ New here? Start with `/visual-plan` and `/quick-recap`. They pay off on day one.
 | `/efficient-fable` | Keeps the top model as orchestrator and final judge; lighter agents do the token-heavy lifting. | You're on a premium model and want its attention on decisions. |
 | `/efficient-frontier` | The same orchestration pattern applied to any high-cost frontier model. | The work can be split and you don't want your priciest model doing every scan. |
 
+### Six worth building first
+
+Different from the ready-made set above: these are foundational workflows you build into your own setup for real project work. Each solves a predictable weak point.
+
+| Skill | What it does | Build when |
+|---|---|---|
+| `skill-creator` | Packages a process you keep repeating into a reusable skill. | You write the same long instructions a third or fourth time. |
+| `planning` | Makes Claude inspect the code and propose a plan before editing. | A change has uncertainty, multiple files, or core logic (auth, billing, migrations). |
+| `context-management` | Compresses noisy tool output into focused summaries during long sessions. | Sessions run long with repeated tests, debugging, or browser automation. |
+| `memory` | Carries project knowledge across sessions; verified against the current code. | Work spans days or weeks, or you switch between several repos. |
+| `code-review` | Reviews generated code as a draft — requirement match, edge cases, tests, fit. | Anything important heads for merge, especially auth, payments, migrations. |
+| `frontend-design` | Guides hierarchy, states, responsiveness, and the design system before final UI. | The output is visual: dashboards, landing pages, admin panels, docs. |
+
 ---
 
 ## A word of caution
 
-Skills are instructions you're handing your agent — read what each one does before you install it. Start with two, see how they change your sessions, then add more. You don't need all ten.
+Skills are instructions you're handing your agent — read what each one does before you install it. Start with two, see how they change your sessions, then add more. You don't need them all.
 
 ---
 
